@@ -1,0 +1,61 @@
+
+html{
+    font-size: 62.5%;
+}
+.nav_bar{
+    display: flex;
+    justify-content: center;
+    position:relative;
+    padding-top:1rem;
+    margin-top:1.5rem;
+    
+}
+
+.logout-text{
+    display:inline;
+    padding:0.5rem;
+}
+
+.logOut-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    right:2rem;
+    margin-top:8px;
+    position:absolute;
+    border:0px ;
+    border-radius: 8px; 
+    background-color: lightgray;
+    color:black;
+    cursor:pointer;
+}
+
+
+/*Media queries */
+
+
+@media(max-width:28rem){
+    html{
+        font-size:53%;
+    }
+    .logOut-btn{
+        
+        right:3rem;
+    }
+    
+    .nav_bar h1{
+    margin-left:3rem;
+    }
+    .logout-text{
+        display: none;
+    }
+
+
+}
+
+@media(max-width:21rem){
+    html{
+        font-size: 48%;
+    }
+}
