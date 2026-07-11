@@ -1,7 +1,7 @@
 
+const API = import.meta.env.VITE_API_URL
 
-
-const Base = `${import.meta.env.VITE_API_URL}/api/notes`;
+const Base = `${API}/api/notes`;
 
 
 const authHeaders = () =>({
@@ -58,7 +58,7 @@ export const summarizeNote = async(id)=>{
 
 //Auth api calls 
 export const registerUser = async(email,password) =>{
-    const res  = await fetch("/api/auth/register" ,{
+    const res  = await fetch(`${API}/api/auth/register` ,{
         method :"POST",
         headers :{'Content-Type' : "application/json"},
         body : JSON.stringify({email,password})
@@ -68,7 +68,7 @@ export const registerUser = async(email,password) =>{
 }
 
 export const loginUser = async (email,password) =>{
-    const res = await fetch("/api/auth/login" ,{
+    const res = await fetch(`${API}/api/auth/login` ,{
         method:"POST",
         headers :{"Content-Type": "application/json"},
         body : JSON.stringify({email,password})
