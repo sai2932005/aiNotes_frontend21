@@ -1,16 +1,73 @@
-# React + Vite
+# AI Notes App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered full-stack Notes application built with the MERN stack that allows users to securely manage notes and generate intelligent summaries using Google's Gemini AI.
 
-Currently, two official plugins are available:
+ # Live Demo 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Frontend: https://ai-notesapp.vercel.app
 
-## React Compiler
+Backend API: https://ainotes-backend-vstm.onrender.com
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ # Features :
+ 
+🔐 Secure user authentication using JWT 
+ 
+👤 User registration and login
+ 
+📝 Create personal notes
 
-## Expanding the ESLint configuration
+📋 View all your notes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🗑️ Delete notes
+
+📱 Responsive user interface
+
+
+
+
+
+# Tech Stack
+
+Frontend :
+React ,
+Vite ,
+React Router ,
+CSS
+
+Deployment:
+Vercel ,
+Render 
+
+
+
+
+
+# Getting Started :
+
+Clone the repository
+
+git clone <your-repository-url>
+
+
+
+# Frontend Setup:
+
+cd client
+
+npm install
+
+npm run dev
+
+
+
+# Environment Variables
+
+
+#Frontend:
+
+VITE_API_URL=http://localhost:5000
+
+
+
+#NOTE  --
+Production: Update  VITE_API_URL to your deployed frontend and backend URLs after deployment.
